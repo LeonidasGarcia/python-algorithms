@@ -1,0 +1,17 @@
+[project]
+name = "python-algorithms"
+version = "0.1.0"
+description = "Algoritmos de ordenamiento en Python"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "black>=26.3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+benchmark = ["matplotlib>=3.8.0", "numpy>=1.24.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
