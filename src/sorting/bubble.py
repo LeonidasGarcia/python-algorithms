@@ -13,5 +13,19 @@ def sort(arr: list) -> list:
     Returns:
         Lista ordenada
     """
-    # TODO: Implementar bubble sort
-    pass
+
+    if len(arr) == 1:
+        return arr
+
+    for i in range(len(arr)):
+        is_swapped = False
+
+        for j in range(1, (len(arr)) - i):
+            if arr[j - 1] > arr[j]:
+                arr[j - 1], arr[j] = arr[j], arr[j - 1]
+                is_swapped = True
+
+        if not is_swapped:
+            break
+
+    return arr
