@@ -24,6 +24,7 @@ def sort(arr: list, bucket_size: int = 5) -> list:
 
     Args:
         arr: Lista de elementos comparables
+        bucket_size: Tamaño de cada cubeta
 
     Returns:
         Lista ordenada
